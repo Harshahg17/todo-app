@@ -1,0 +1,129 @@
+*
+{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}  
+.container
+{
+   width: 100%;
+   min-height: 100vh;
+   padding: 10px;
+   background-image: url("333856.jpg");
+  
+  
+ 
+  } 
+  .toapp {
+     background-color: #fff; 
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto 20px; /* Set top margin to 0 */
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+  }
+  
+  .toapp h2{
+    color: #006725;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }  
+  .toapp img
+  {
+    margin-left: 10px;
+
+  } 
+  .row
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edef0e; 
+   
+    border-radius: 40px;
+    padding: 1px;
+    margin-bottom: 25px;
+  } 
+  #input1
+  { 
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+
+  } 
+  button
+  {
+    border: none;
+    outline: none;
+    padding: 16px;
+    background: #ff8945;
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+  }  
+  #listcontainer
+  {
+   user-select: none;
+   cursor: pointer;
+   list-style-type: none;
+ 
+  
+  }  
+  ul li
+  {
+    list-style-type: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative
+    ;
+  }  
+  ul li::before
+  { content:'';
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    
+    
+    background-image: url(unchecked.png); 
+    background-size: cover;
+   
+    background-position: center;
+    top: 13px;
+    left: 8px;
+
+    } 
+    ul li.checked
+  
+    {
+      text-decoration: line-through;
+    }
+    ul li.checked::before
+    {
+      background-image: url(checked.png);
+      
+
+    }  
+    ul li span{
+      position: absolute;
+      right: 0;
+      top: 5px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      
+      
+    }  
+    ul li span:hover
+    {
+            background-color:#edeef0;
+            border-radius: 50%;
+    }
+    
+  
